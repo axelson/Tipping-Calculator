@@ -95,6 +95,8 @@ public class TipsterActivity extends Activity {
            }
            // To determine the tip percentage choice made by user
            radioCheckedId = checkedId;
+
+           calculate();
           }
         });
          
@@ -139,6 +141,10 @@ public class TipsterActivity extends Activity {
                     && txtPeople.getText().length() > 0
                     && txtTipOther.getText().length() > 0);
             break;
+        }
+
+        if(btnCalculate.isEnabled()) {
+           calculate();
         }
         return false;
         }
