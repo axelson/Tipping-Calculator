@@ -2,5 +2,17 @@
 <resources>
     <string name="hello">Hello World, TipsterActivity!</string>
     <string name="app_name">Tipster</string>
-    <string name="TotalAmount">TotalAmount</string>
+    <string name="TotalAmount">Total Amount:</string>
+    <string name="NumPeople">No. of People:</string>
+    <string name="TipPercentage">Tip Percentage:</string>
+    <string name="ResetButton">Reset</string>
+    <string name="CalculateButton">Calculate</string>
+    <string name="TipAmount">Tip Amount:</string>
+    <string name="TotalToPay">Total to Pay:</string>
+    <string name="TotalPerPerson">Total Per Person:</string>
+    <string name="fifteenButton">15%</string>
+    <string name="twentyButton">20%</string>
+    <string name="otherTipButton">other:</string>
+    <string name="blank"></string>
+    <string name="DefaultNumPeople">1</string>
 </resources>
