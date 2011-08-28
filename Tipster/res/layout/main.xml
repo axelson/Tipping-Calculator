@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="fill_parent" android:layout_width="fill_parent" android:shrinkColumns="0">
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:stretchColumns="1">
 <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <TextView android:layout_height="wrap_content" android:text="@string/TotalAmount" android:layout_width="wrap_content"></TextView>
-    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number|numberSigned|numberDecimal" android:id="@+id/txtAmount"></EditText>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number|numberSigned|numberDecimal" android:layout_column="2" android:layout_span="2" android:id="@+id/txtAmount"></EditText>
 </TableRow>
 <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NumPeople"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/txtPeople" android:inputType="number|numberSigned|numberDecimal" android:text="@string/DefaultNumPeople"></EditText>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/txtPeople" android:inputType="number|numberSigned|numberDecimal" android:layout_column="2" android:layout_span="3" android:text="@string/DefaultNumPeople"></EditText>
 </TableRow>
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TableRow3">
     <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/TipPercentage"></TextView>
 </TableRow>
 <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/RadioGroupTips" android:checkedButton="@+id/radioFifteen">
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_span="3" android:id="@+id/RadioGroupTips" android:checkedButton="@+id/radioFifteen">
         <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="true" android:id="@+id/radioFifteen" android:text="@string/fifteenButton"></RadioButton>
         <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radioTwenty" android:text="@string/twentyButton"></RadioButton>
         <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radioOther" android:text="@string/otherTipButton"></RadioButton>
     </RadioGroup>
-    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTipOther">
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:id="@+id/txtTipOther">
         <requestFocus></requestFocus>
     </EditText>
 </TableRow>
 <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnReset" android:text="@string/ResetButton"></Button>
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCalculate" android:text="@string/CalculateButton"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnReset" android:layout_column="2" android:text="@string/ResetButton"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCalculate" android:layout_column="3" android:text="@string/CalculateButton"></Button>
 </TableRow>
 <View android:id="@+id/view1" android:layout_width="wrap_content" android:layout_height="2px"></View>
 <TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TipAmount"></TextView>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTipAmount" android:text="@string/blank"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTipAmount" android:layout_column="2" android:layout_span="2" android:text="@string/blank"></TextView>
 </TableRow>
 <TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TotalToPay"></TextView>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTotalToPay" android:text="@string/blank"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTotalToPay" android:layout_column="2" android:layout_span="2" android:text="@string/blank"></TextView>
 </TableRow>
 <TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TotalPerPerson"></TextView>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTipPerPerson" android:text="@string/blank"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTipPerPerson" android:layout_column="2" android:layout_span="2" android:text="@string/blank"></TextView>
 </TableRow>
 </TableLayout>
