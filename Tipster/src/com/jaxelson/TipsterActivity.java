@@ -96,7 +96,9 @@ public class TipsterActivity extends Activity {
            // To determine the tip percentage choice made by user
            radioCheckedId = checkedId;
 
-           calculate();
+           if(btnCalculate.isEnabled()) {
+               calculate();
+            }
           }
         });
          

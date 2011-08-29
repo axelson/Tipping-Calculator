@@ -18,7 +18,7 @@
         <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radioTwenty" android:text="@string/twentyButton"></RadioButton>
         <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radioOther" android:text="@string/otherTipButton"></RadioButton>
     </RadioGroup>
-    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:id="@+id/txtTipOther">
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="2" android:inputType="number|numberSigned|numberDecimal" android:id="@+id/txtTipOther">
         <requestFocus></requestFocus>
     </EditText>
 </TableRow>
