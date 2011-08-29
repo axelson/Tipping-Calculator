@@ -1,5 +1,7 @@
 package com.jaxelson;
 
+import java.util.Formatter;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -237,11 +239,24 @@ public class TipsterActivity extends Activity {
             Double tipAmount = ((billAmount * percentage) / 100);
             Double totalToPay = billAmount + tipAmount;
             Double perPersonPays = totalToPay / totalPeople;
-     
-            txtTipAmount.setText(tipAmount.toString());
-            txtTotalToPay.setText(totalToPay.toString());
-            txtTipPerPerson.setText(perPersonPays.toString());
+
+            txtTipAmount.setText(formatDecimal(tipAmount));
+            txtTotalToPay.setText(formatDecimal(totalToPay));
+            txtTipPerPerson.setText(formatDecimal(perPersonPays));
         }
+    }
+    
+    /**
+     * Format a number to print on the screen
+     * @param number to format
+     * @return the formatted number
+     */
+    public String formatDecimal(Double number) {
+    	StringBuilder sb = new StringBuilder();
+        Formatter formatter = new Formatter(sb);
+        formatter.format("%.2f", number);
+        String string = sb.toString();
+        return string;
     }
     
     /**
